@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.background-header {
+  background-repeat: no-repeat;
+  top: -150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: absolute;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 49.65px;
+  margin-bottom: 80px;
+}
+
+.header-illu {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
+}/*# sourceMappingURL=style.css.map */
