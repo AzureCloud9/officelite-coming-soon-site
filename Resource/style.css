@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
 .background-header {
   background-repeat: no-repeat;
   top: -150px;
@@ -23,4 +29,45 @@
   display: flex;
   justify-content: center;
   margin-bottom: 64px;
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.left-side > h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.left-side > p {
+  color: #747B95;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.left-side > .btn1 {
+  height: 56px;
+  width: 171px;
+  border-radius: 28px;
+  background-color: #5175FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+.left-side > .btn1:hover {
+  transition: 0.5s;
+  background-color: #829CFF;
 }/*# sourceMappingURL=style.css.map */

@@ -9,10 +9,15 @@ $secondaryColor2nd: #25293A;
 $thirdColor:#747B95;
 $thirdColor2nd:#F05B5B;
 
-$main-fonts: 'Kumbh Sans', sans-serif;
+$main-font: 'Kumbh Sans', sans-serif;
 
 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: $main-font;
 
+}
 
 .background-header {
     background-repeat: no-repeat;
@@ -41,4 +46,54 @@ $main-fonts: 'Kumbh Sans', sans-serif;
     justify-content: center;
     margin-bottom: 64px;
 
+}
+
+.left-side {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    > h1{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        text-align: center;
+        margin-bottom: 24px;
+
+    }
+
+    > p {
+        color: $thirdColor;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: center;
+        margin-bottom: 24px;
+
+    }
+
+    > .btn1 {
+        height: 56px;
+        width: 171px;
+        border-radius:28px;
+        background-color: $mainColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    >.btn1:hover {
+        transition: 0.5s;
+        background-color: $mainColor2nd;
+        
+        
+    }
 }
