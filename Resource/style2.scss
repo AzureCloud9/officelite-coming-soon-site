@@ -20,6 +20,10 @@ $main-font: 'Kumbh Sans', sans-serif;
         font-family: $main-font;
 }
 
+body {
+    background-color: #F2F2F2;  
+}
+
 .background-header {
     background-repeat: no-repeat;
     top: -150px;
@@ -67,6 +71,7 @@ $main-font: 'Kumbh Sans', sans-serif;
         font-weight: 700;
         font-size: 16px;
         letter-spacing: 2px;
+        margin-bottom: 64px;
         >span {
             color: $mainColor;
             margin-left: 5px;
@@ -112,4 +117,64 @@ $main-font: 'Kumbh Sans', sans-serif;
         }
 
     }
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+        height: 435px;
+        width: 327px;
+        background: white;
+
+        input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 16px;
+            height: 45px;
+            width: 279px;
+            margin-bottom: 24px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        select {
+            padding-left: 16px;
+            height: 45px;
+            width: 295px;
+            margin-bottom: 24px;
+        }
+
+        #company {
+            margin-bottom: 40px;
+        }
+
+        button {
+            height: 56px;
+            width: 279px;
+            border-radius: 28px;
+            background-color: $mainColor;
+            font-size: 16px;
+            font-weight: 700;
+            color: white;
+
+        }
+    }
+}
+
+.footerr {
+    background-color: $secondaryColor2nd;
+    height: 320px;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    padding-top:10px;
+
 }

@@ -6,6 +6,10 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+body {
+  background-color: #F2F2F2;
+}
+
 .background-header {
   background-repeat: no-repeat;
   top: -150px;
@@ -46,6 +50,7 @@
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 2px;
+  margin-bottom: 64px;
 }
 .timer > h4 > span {
   color: #5175FF;
@@ -74,4 +79,55 @@
 }
 .timer .timer-box #days #days-num > h5, .timer .timer-box #hours #days-num > h5, .timer .timer-box #minutes #days-num > h5, .timer .timer-box #seconds #days-num > h5 {
   font-size: 12px;
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+form .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  height: 435px;
+  width: 327px;
+  background: white;
+}
+form .container input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 16px;
+  height: 45px;
+  width: 279px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  font-weight: 400;
+}
+form .container select {
+  padding-left: 16px;
+  height: 45px;
+  width: 295px;
+  margin-bottom: 24px;
+}
+form .container #company {
+  margin-bottom: 40px;
+}
+form .container button {
+  height: 56px;
+  width: 279px;
+  border-radius: 28px;
+  background-color: #5175FF;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.footerr {
+  background-color: #25293A;
+  height: 320px;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  padding-top: 10px;
 }/*# sourceMappingURL=style2.css.map */
