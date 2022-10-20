@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$mainColor: #5175FF;
+$mainColor2nd: #829CFF;
+
+$secondaryColor: #333950;
+$secondaryColor2nd: #25293A;
+
+$thirdColor:#747B95;
+$thirdColor2nd:#F05B5B;
+
+$main-font: 'Kumbh Sans', sans-serif;
+
+
+
+* {
+    padding: 0;
+        margin: 0;
+        border: 0;
+        font-family: $main-font;
+}
+
+.background-header {
+    background-repeat: no-repeat;
+    top: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: absolute;
+    overflow: hidden;
+}
+
+.header-logo {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    padding-top: 49.65px;
+    margin-bottom: 80px;
+}
+
+.title-text {
+  
+
+    > h1 {
+        color: $secondaryColor;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    > p {
+        color: $thirdColor;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+}
+
+.timer{
+    > h4 {
+        text-align: center;
+        color: $secondaryColor;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 2px;
+        >span {
+            color: $mainColor;
+            margin-left: 5px;
+        }
+    }
+
+    .timer-box {
+        display: flex;
+        justify-content: center;
+        color: $mainColor;
+        margin-bottom: 40px;
+
+        #days {
+            height: 92px;
+            width: 72px;
+            border-radius: 4px;
+            background: rgb(81, 117, 255, 0.2);            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 13px;
+
+            #days-num {
+                font-size: 32px;
+                font-weight: 700;
+                
+                > h5 {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        #hours {
+            @extend #days;
+        }
+
+        #minutes {
+            @extend #hours;
+        }
+
+        #seconds {
+            @extend #minutes;
+        }
+
+    }
+}

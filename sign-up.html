@@ -3,34 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="./Resource/style2.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
-    <title>Frontend Mentor | Officelite coming soon site</title>
+    <title>Officelite coming soon site</title>
 </head>
 <body>
-  Work smarter. Save time.
+  <div class="background-header">
+      <img src="./assets/home/new-bg.svg" alt="background" >
+  </div>  
+  <div class="header-logo">
+      <img src="./assets/shared/logo.svg" alt="test" class="logo">
+  </div>
+  
+  <div class="title-text">
+    <h1>Work smarter. <br> Save time.</h1>
+    <p>Easily manage your projects. Get on the list <br>
+      and receive in-app perks available only to <br>
+      early subscribers. We are moving into final <br> 
+      development and getting ready for official <br>
+      launch soon.</p>
+  </div>
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
-
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
+<div class="timer">
+  <h4>COMING <span>5 January 2023</span></h4><br>
+  <div class="timer-box">
+    <div id="days">
+      <h1 id="days-num"></h1>
+      <h5>Days</h5>
+    </div>
+    <div id="hours">
+      <h1 id="hours-num"></h1>
+      <h5>hours</h5>
+    </div>
+    <div id="minutes">
+      <h1 id="min-num"></h1>
+      <h5>min</h5>
+    </div>
+    <div id="seconds">
+      <h1 id="sec-num"></h1>
+      <h5>sec</h5>
+    </div>
+ <script src="./Resource/app2.js"></script>
 </body>
 </html>

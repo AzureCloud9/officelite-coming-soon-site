@@ -13,13 +13,15 @@ $main-font: 'Kumbh Sans', sans-serif;
 
 
 *{
-    margin: 0px;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
+    border: 0;
     font-family: $main-font;
 }
 
 body {
     background-color: #F2F2F2;  
+    
  }
 
 
@@ -63,7 +65,6 @@ body {
     > h1{
         font-size: 40px;
         font-weight: 700;
-        line-height: 48px;
         text-align: center;
         margin-bottom: 24px;
 
@@ -73,8 +74,6 @@ body {
         color: $thirdColor;
         font-size: 16px;
         font-weight: 400;
-        line-height: 26px;
-        letter-spacing: 0px;
         text-align: center;
         margin-bottom: 24px;
 
@@ -93,6 +92,7 @@ body {
         font-weight: 700;
         font-size: 16px;
         cursor: pointer;
+        text-decoration: none;
         }
 
     >.btn1:hover {
@@ -159,7 +159,8 @@ body {
             font-weight: 700;
             font-size: 16px;
             color: $mainColor;
-            cursor: pointer
+            cursor: pointer;
+            text-decoration: none;
         }
         
     }
@@ -181,6 +182,7 @@ body {
             }
 
             .btn3 {
+                cursor: pointer;
                 background-color: #F2F2F2;
                 height: 56px;
                 width: 171px;
@@ -192,7 +194,11 @@ body {
                 font-weight: 700;
                 font-size: 16px;
                 color: $mainColor;
-                cursor: pointer;
+                z-index: 3;
+                text-decoration: none;
+                
+                
+
             }
         }
 
@@ -285,6 +291,7 @@ footer {
             font-weight: 700;
             font-size: 16px;
             cursor: pointer;
+            text-decoration: none;
         }
     }
 
