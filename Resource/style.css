@@ -4,9 +4,9 @@
   padding: 0px;
   font-family: "Kumbh Sans", sans-serif;
 }
-* body {
+
+body {
   background-color: #F2F2F2;
-  height: 350vh;
 }
 
 .background-header {
@@ -70,6 +70,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
+  cursor: pointer;
 }
 .left-side > .btn1:hover {
   transition: 0.5s;
@@ -80,8 +81,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-.cards .card1 {
+.cards .card1, .cards .card3, .cards .card2 {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -91,29 +93,30 @@
   box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
   background-color: white;
   text-align: center;
+  margin-bottom: 32px;
 }
-.cards .card1 > h5 {
+.cards .card1 > h5, .cards .card3 > h5, .cards .card2 > h5 {
   font-size: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-.cards .card1 > h1 {
+.cards .card1 > h1, .cards .card3 > h1, .cards .card2 > h1 {
   font-size: 56px;
 }
-.cards .card1 > h6 {
+.cards .card1 > h6, .cards .card3 > h6, .cards .card2 > h6 {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 56px;
 }
-.cards .card1 > p {
+.cards .card1 > p, .cards .card3 > p, .cards .card2 > p {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 16px;
 }
-.cards .card1 .p-end {
+.cards .card1 .p-end, .cards .card3 .p-end, .cards .card2 .p-end {
   margin-bottom: 32px;
 }
-.cards .card1 .btn2 {
+.cards .card1 .btn2, .cards .card3 .btn2, .cards .card2 .btn2 {
   height: 56px;
   width: 171px;
   border-radius: 28px;
@@ -125,7 +128,103 @@
   font-weight: 700;
   font-size: 16px;
   color: #5175FF;
+  cursor: pointer;
 }
-.cards .card1 .btn2 .btn2 > h1 {
-  color: black;
+.cards .card2 {
+  color: white;
+  background-color: #5175FF;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+.cards .card2 img {
+  position: absolute;
+  overflow: hidden;
+  top: 20px;
+  z-index: 1;
+}
+.cards .card2 .btn3 {
+  background-color: #F2F2F2;
+  height: 56px;
+  width: 171px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #5175FF;
+  cursor: pointer;
+}
+.cards .card3 {
+  margin-bottom: 0px;
+}
+
+footer {
+  background: #25293A;
+  height: 1248px;
+  position: relative;
+  z-index: -1;
+  margin-top: -820px;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+}
+footer .footer-box {
+  padding-top: 896px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-box > h4 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+footer .footer-box > h4 > span {
+  color: #5175FF;
+  margin-left: 5px;
+}
+footer .footer-box .timer-box {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-bottom: 40px;
+}
+footer .footer-box .timer-box #days, footer .footer-box .timer-box #hours, footer .footer-box .timer-box #minutes, footer .footer-box .timer-box #seconds {
+  height: 92px;
+  width: 72px;
+  border-radius: 4px;
+  background-color: #333950;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 13px;
+}
+footer .footer-box .timer-box #days #days-num, footer .footer-box .timer-box #hours #days-num, footer .footer-box .timer-box #minutes #days-num, footer .footer-box .timer-box #seconds #days-num {
+  font-size: 32px;
+  font-weight: 700;
+}
+footer .footer-box .timer-box #days #days-num > h5, footer .footer-box .timer-box #hours #days-num > h5, footer .footer-box .timer-box #minutes #days-num > h5, footer .footer-box .timer-box #seconds #days-num > h5 {
+  font-size: 12px;
+}
+footer .footer-box .footer-button {
+  height: 56px;
+  width: 171px;
+  border-radius: 28px;
+  background-color: #5175FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

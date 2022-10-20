@@ -16,13 +16,11 @@ $main-font: 'Kumbh Sans', sans-serif;
     margin: 0px;
     padding: 0px;
     font-family: $main-font;
-
-    body {
-       background-color: #F2F2F2;  
-       height: 350vh;
-    }
-
 }
+
+body {
+    background-color: #F2F2F2;  
+ }
 
 
 .background-header {
@@ -94,6 +92,7 @@ $main-font: 'Kumbh Sans', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
+        cursor: pointer;
         }
 
     >.btn1:hover {
@@ -108,6 +107,7 @@ $main-font: 'Kumbh Sans', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     .card1 {
         display: flex;
@@ -119,6 +119,7 @@ $main-font: 'Kumbh Sans', sans-serif;
         box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
         background-color: white;
         text-align: center;
+        margin-bottom: 32px;
 
         > h5 {
             font-size: 20px;
@@ -158,14 +159,135 @@ $main-font: 'Kumbh Sans', sans-serif;
             font-weight: 700;
             font-size: 16px;
             color: $mainColor;
-            
-
-            .btn2 > h1 {
-                color: black;
-            }
+            cursor: pointer
         }
         
-
-
     }
+
+        .card2{
+            @extend .card1;
+            color: white;
+            background-color:$mainColor;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 32px;
+
+            img {
+                position: absolute; 
+                overflow: hidden;
+                top: 20px;  
+                z-index:1;          
+                
+            }
+
+            .btn3 {
+                background-color: #F2F2F2;
+                height: 56px;
+                width: 171px;
+                border-radius:28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                color: $mainColor;
+                cursor: pointer;
+            }
+        }
+
+        .card3 {
+            @extend .card1;
+            margin-bottom: 0px;
+        }
+}
+footer {
+    background: #25293A;
+    height: 1248px;
+    position: relative;
+    z-index: -1;
+    margin-top: -820px;
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+
+    .footer-box{
+        padding-top: 896px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        > h4 {
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 2px;
+            >span {
+                color: $mainColor;
+                margin-left: 5px;
+            }
+        }
+
+        .timer-box {
+            display: flex;
+            justify-content: center;
+            color: white;
+            margin-bottom: 40px;
+
+            #days {
+                height: 92px;
+                width: 72px;
+                border-radius: 4px;
+                background-color: $secondaryColor;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 13px;
+
+                #days-num {
+                    font-size: 32px;
+                    font-weight: 700;
+                    
+                    > h5 {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            #hours {
+                @extend #days;
+            }
+
+            #minutes {
+                @extend #hours;
+            }
+
+            #seconds {
+                @extend #minutes;
+            }
+
+        }
+
+
+        .footer-button {
+            height: 56px;
+            width: 171px;
+            border-radius:28px;
+            background-color: $mainColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+
+
+
 }
