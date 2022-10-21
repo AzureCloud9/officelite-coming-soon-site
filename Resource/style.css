@@ -6,6 +6,10 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #F2F2F2;
 }
@@ -76,6 +80,9 @@ body {
   background-color: #829CFF;
 }
 .left-side .left-title1 {
+  display: none;
+}
+.left-side .left-description2 {
   display: none;
 }
 
@@ -258,8 +265,8 @@ footer .footer-box .footer-button {
     display: block;
     padding-top: 76.65px;
     margin-bottom: 184px;
-    margin-left: 39px;
-    width: 30px;
+    margin-left: 165px;
+    width: 60px;
   }
   .header-illu {
     display: none;
@@ -267,7 +274,7 @@ footer .footer-box .footer-button {
   .sides {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    margin-left: 165px;
   }
   .sides .right-side {
     display: none;
@@ -283,43 +290,58 @@ footer .footer-box .footer-button {
   }
   .left-side {
     display: block;
-    margin-bottom: 200px;
-    margin-left: 39px;
-    margin-right: 69px;
-    width: 385px;
+    margin-bottom: 255px;
+    margin-right: 95px;
+    width: 540px;
   }
   .left-side h1 {
+    color: #333950;
     text-align: start;
   }
   .left-side p {
     text-align: start;
   }
   .left-side .left-title1 {
+    font-size: 56px;
     display: block;
   }
   .left-side .left-title {
     display: none;
   }
+  .left-side .left-description {
+    display: block;
+  }
   .cards {
     flex-direction: row;
   }
+  .cards .card1, .cards .card2, .cards .card3 {
+    height: 508px;
+  }
   .cards .card2 {
-    margin-bottom: 195px;
-    margin-left: 8px;
-    margin-right: 8px;
+    height: 508px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   .cards .card3 {
+    height: 508px;
     margin-bottom: 35px;
   }
   footer {
     margin-top: -383px;
-    height: 608px;
+    height: 600px;
   }
   footer .footer-box {
-    padding-top: 309px;
+    padding-top: 390px;
+    display: block;
   }
   footer .footer-box > h4 {
-    font-size: 30px;
+    font-size: 16px;
+    display: block;
+    margin-left: 220px;
+  }
+  footer .footer-box .timer-box {
+    justify-content: flex-start;
+    margin-left: 220px;
   }
   footer .footer-box .timer-box #days, footer .footer-box .timer-box #hours, footer .footer-box .timer-box #minutes, footer .footer-box .timer-box #seconds {
     height: 128px;
@@ -394,8 +416,7 @@ footer .footer-box .footer-button {
     font-size: 16px;
   }
   footer .footer-box .footer-button {
-    font-size: 20px;
-    width: 200px;
+    display: none;
   }
 }
 /* 
@@ -450,6 +471,9 @@ footer .footer-box .footer-button {
     display: block;
   }
   .left-side .left-title {
+    display: none;
+  }
+  .left-side .left-description2 {
     display: none;
   }
   .cards {

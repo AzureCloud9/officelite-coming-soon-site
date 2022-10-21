@@ -19,6 +19,10 @@ $main-font: 'Kumbh Sans', sans-serif;
     font-family: $main-font;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: #F2F2F2;  
     
@@ -103,6 +107,10 @@ body {
 
     .left-title1 {
         display: none;
+    }
+
+    .left-description2{
+        display:none;
     }
 
     
@@ -318,6 +326,13 @@ footer {
     }
 }
 
+
+//////////////////////////////////////////////////
+/// 
+/////////////////////////////////////////////////
+/// 
+//////////////////////////////////////////////////
+
 @media (min-width: 1280px) {
   
     .background-header {
@@ -329,8 +344,8 @@ footer {
         display: block;
         padding-top: 76.65px;
         margin-bottom: 184px;
-        margin-left: 39px;
-        width: 30px;
+        margin-left: 165px;
+        width: 60px;
     }
 
     .header-illu {
@@ -340,7 +355,7 @@ footer {
     .sides {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        margin-left: 165px;
 
         .right-side {
             display: none;
@@ -360,13 +375,13 @@ footer {
 
     .left-side {
         display: block;
-        margin-bottom: 200px;
-        margin-left: 39px;
-        margin-right: 69px;
-        width: 385px;
+        margin-bottom: 255px;
+        margin-right: 95px;
+        width: 540px;
 
 
         h1 {
+            color: $secondaryColor;
             text-align: start;
         }
 
@@ -375,6 +390,7 @@ footer {
         }
 
         .left-title1 {
+            font-size: 56px;
             display: block;
         }
 
@@ -382,41 +398,54 @@ footer {
             display: none;
         }
 
+        .left-description {
+            display: block;
+
+        }
+
     }
 
     .cards {
         flex-direction: row;
         .card1 {
+            height: 508px;
 
         }
 
         .card2 {
-            margin-bottom: 195px;
-            margin-left: 8px;
-            margin-right: 8px;
+            height: 508px;
+            margin-left: 50px;
+            margin-right: 50px;
 
 
         }
 
         .card3 {
+            height: 508px;
             margin-bottom: 35px;
         }
     }
 
    footer {
     margin-top: -383px;
-    height: 608px;
+    height: 600px;
 
     
 
         .footer-box {
-            padding-top: 309px;
+            padding-top: 390px;
+            display: block;
+
 
             >h4 {
-                font-size: 30px;
+                font-size: 16px;
+                display: block;
+                margin-left: 220px;
             }
 
             .timer-box {
+                justify-content: flex-start;
+                margin-left: 220px;
 
                 #days {
                     height: 128px;
@@ -510,8 +539,7 @@ footer {
             }
 
             .footer-button {
-                font-size: 20px;
-                width: 200px;
+                display: none;
             }
         }
    }
@@ -586,6 +614,11 @@ footer {
 
         .left-title{
             display: none;
+        }
+
+        .left-description2 {
+            display: none;
+            
         }
 
     }
