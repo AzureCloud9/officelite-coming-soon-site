@@ -24,6 +24,8 @@ body {
     background-color: #F2F2F2;  
 }
 
+
+
 .background-header {
     background-repeat: no-repeat;
     top: -150px;
@@ -191,7 +193,99 @@ form {
 
 @media (min-width: 1280px) {
   
-    /* CSS */
+    body {
+        height: 100vh;
+    }
+
+    .background-header {
+       display: none;
+    }
+
+    .header-logo {
+        display: block;
+        width: 50px;
+        margin-left: 165px;
+
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto 420px;
+        width: 100vw;
+        height: 100vh;
+
+        .Lside {
+
+            .left-page {
+                display: flex;
+                flex-direction: row;
+                margin-left: 165px;
+                .leftReal {
+                    width: 540px;
+
+                    .title-text {
+                        > h1 {
+                            display: none;
+                        }
+
+                        #t-text2{
+                            display: block;
+                        }
+
+                        #t-text3 {
+                            display: block;
+                        }
+
+                        > p {
+                            display: none;
+                        }
+                        
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .footerr {
+        position: static;
+        height: 100vh;
+        width: 100%;
+        margin-top: 0px; 
+
+    }
+
+    .title-text {
+
+        > h1 {
+            text-align: start;
+        }
+
+        > p {
+            text-align: start;
+
+        }
+
+    }
+
+    .timer {
+        > h4 {
+            margin-bottom: 8px;
+            text-align: start;
+        }
+
+        .timer-box {
+            display: flex;
+            justify-content: start;
+        }
+    }
+
+    .container {
+        position: absolute;
+        top: 155px;
+        left: 930px;
+        width: 420px;
+    }
     
   }
   
@@ -202,8 +296,77 @@ form {
   
   @media (min-width: 1024px) and (max-width: 1279px) {
     
-    /* CSS */
+    body {
+        height: 100vh;
+    }
+
+    .background-header {
+       display: none;
+    }
+
+    .header-logo {
+        display: block;
+        width: 50px;
+        margin-left: 110px;
+
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        width: 100vw;
+        height: 100vh;
+
+        .Lside {
+
+            .left-page {
+                display: flex;
+                flex-direction: row;
+                margin-left: 110px;
+            }
+        }
+    }
+
+    .footerr {
+        position: static;
+        height: 100vh;
+        width: 100%;
+        margin-top: 0px; 
+
+    }
+
+    .title-text {
+
+        > h1 {
+            text-align: start;
+        }
+
+        > p {
+            text-align: start;
+
+        }
+
+    }
+
+    .timer {
+        > h4 {
+            margin-bottom: 8px;
+            text-align: start;
+        }
+
+        .timer-box {
+            display: flex;
+            justify-content: start;
+        }
+    }
+
+    .container {
+        position: absolute;
+        top: 155px;
+        left: 550px;
+    }
     
+
   }
   
   /* 
