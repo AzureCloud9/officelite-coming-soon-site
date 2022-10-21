@@ -62,6 +62,7 @@ body {
     flex-direction: column;
     margin-bottom: 100px;
 
+
     > h1{
         font-size: 40px;
         font-weight: 700;
@@ -103,13 +104,19 @@ body {
     
 }
 
+.right-side {
+    display: none;
+}
+
 .cards {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    
     .card1 {
+
+        
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -121,29 +128,37 @@ body {
         text-align: center;
         margin-bottom: 32px;
 
-        > h5 {
+        .t-left {
+            display: none;
+        }
+
+        .t-right {
+            display: none;
+        }
+
+        > .c1 {
             font-size: 20px;
             margin-top: 40px;
             margin-bottom: 40px;
         }
 
-        > h1 {
+        > .c2 {
             font-size: 56px;
         }
 
-        > h6 {
+        > .c3 {
             font-size: 16px;
             font-weight: 400;
             margin-bottom: 56px;
         }
 
-        > p {
+        > .c4 {
             font-size: 16px;
             font-weight: 400;
             margin-bottom: 16px;
         }
 
-        .p-end {
+        #p-end {
             margin-bottom: 32px;
         }
 
@@ -292,7 +307,185 @@ footer {
             text-decoration: none;
         }
     }
-
-
-
 }
+
+@media (min-width: 1280px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    
+    .background-header {
+        display: none;
+        
+    }
+
+    .header-logo {
+        display: block;
+        padding-top: 76.65px;
+        margin-bottom: 104px;
+        margin-left: 39px;
+    }
+
+    .header-illu {
+        display: none;
+    }
+
+    .sides {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left-side {
+        display: block;
+        margin-bottom: 140px;
+        margin-left: 39px;
+        margin-right: 69px;
+        width: 385px;
+
+
+        h1 {
+            text-align: start;
+        }
+
+        p {
+            text-align: start;
+        }
+
+    }
+
+    .right-side{
+        display: block;
+    }
+
+    .btn3 {
+        display: none;
+    }
+
+    .cards {
+
+        .card1 {
+            height: 316px;
+            width: 689px;
+            margin-bottom: 24px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            text-align: start;
+
+            >.c1 {
+                display: none;
+            }
+
+            >.c2 {
+                display: none;
+            }
+
+            >.c3 {
+                display: none;
+            }
+
+            >.c4 {
+                display: none;
+            }
+
+            >#p-end {
+                display: none;
+            }
+
+            >.btn2 {
+                display: none;
+            }
+
+            .t-left {
+                display: block;
+                margin-left: 48px;
+
+                .c1 {
+                    margin-bottom: 16px;
+                    font-size: 20px;
+                    font-weight: 700;
+    
+                }
+    
+                .c2 {
+                    margin-bottom: 4px;
+                    font-size: 56px;
+                    font-weight: 700;
+    
+                }
+    
+                .c3 {
+                    margin-bottom: 24px;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+            .t-right {
+                display: block;
+                justify-content: center;
+                align-items: center;
+                line-height: 40px;
+            }
+        }
+
+        .card2 {
+            @extend .card1;
+
+            img {
+                display: none;
+            }
+
+            .btn3 {
+                display: none;
+            }
+
+
+            
+            .t-left {
+
+                .btnRetry {
+                    cursor: pointer;
+                    background-color: #F2F2F2;
+                    height: 56px;
+                    width: 171px;
+                    border-radius:28px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: $mainColor;
+                    z-index: 3;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .card3 {
+            @extend .card1;
+        }
+    }
+
+    
+    
+  }
