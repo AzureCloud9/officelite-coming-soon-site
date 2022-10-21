@@ -175,6 +175,14 @@ form .container button {
   .title-text #t-text2 {
     display: block;
   }
+  .timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .timer > h4 {
+    margin-bottom: 8px;
+  }
   .timer .timer-box #days, .timer .timer-box #hours, .timer .timer-box #minutes, .timer .timer-box #seconds {
     height: 128px;
     width: 100px;

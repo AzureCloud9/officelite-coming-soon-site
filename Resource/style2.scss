@@ -241,6 +241,14 @@ form {
     }
 
     .timer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+        > h4 {
+            margin-bottom: 8px;
+        }
         .timer-box {
 
             #days {
