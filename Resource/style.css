@@ -75,9 +75,17 @@ body {
   transition: 0.5s;
   background-color: #829CFF;
 }
+.left-side .left-title1 {
+  display: none;
+}
 
 .right-side {
   display: none;
+}
+
+.right-side-main {
+  display: none;
+  margin-right: 20px;
 }
 
 .cards {
@@ -243,14 +251,304 @@ footer .footer-box .footer-button {
 }
 
 @media (min-width: 1280px) {
-  /* CSS */
+  .background-header {
+    display: none;
+  }
+  .header-logo {
+    display: block;
+    padding-top: 76.65px;
+    margin-bottom: 184px;
+    margin-left: 39px;
+    width: 30px;
+  }
+  .header-illu {
+    display: none;
+  }
+  .sides {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sides .right-side {
+    display: none;
+  }
+  .sides .right-side-main {
+    display: block;
+    margin-right: 20px;
+    top: 20;
+  }
+  .sides .right-side-main > img {
+    position: relative;
+    top: -64px;
+  }
+  .left-side {
+    display: block;
+    margin-bottom: 200px;
+    margin-left: 39px;
+    margin-right: 69px;
+    width: 385px;
+  }
+  .left-side h1 {
+    text-align: start;
+  }
+  .left-side p {
+    text-align: start;
+  }
+  .left-side .left-title1 {
+    display: block;
+  }
+  .left-side .left-title {
+    display: none;
+  }
+  .cards {
+    flex-direction: row;
+  }
+  .cards .card2 {
+    margin-bottom: 195px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .cards .card3 {
+    margin-bottom: 35px;
+  }
+  footer {
+    margin-top: -383px;
+    height: 608px;
+  }
+  footer .footer-box {
+    padding-top: 309px;
+  }
+  footer .footer-box > h4 {
+    font-size: 30px;
+  }
+  footer .footer-box .timer-box #days, footer .footer-box .timer-box #hours, footer .footer-box .timer-box #minutes, footer .footer-box .timer-box #seconds {
+    height: 128px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #333950;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 13px;
+  }
+  footer .footer-box .timer-box #days #days-num, footer .footer-box .timer-box #hours #days-num, footer .footer-box .timer-box #minutes #days-num, footer .footer-box .timer-box #seconds #days-num {
+    font-size: 56px;
+    font-weight: 700;
+  }
+  footer .footer-box .timer-box #days #days-num > h5, footer .footer-box .timer-box #hours #days-num > h5, footer .footer-box .timer-box #minutes #days-num > h5, footer .footer-box .timer-box #seconds #days-num > h5 {
+    font-size: 16px;
+  }
+  footer .footer-box .timer-box #hours, footer .footer-box .timer-box #minutes, footer .footer-box .timer-box #seconds {
+    height: 128px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #333950;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 13px;
+  }
+  footer .footer-box .timer-box #hours #hours-num, footer .footer-box .timer-box #minutes #hours-num, footer .footer-box .timer-box #seconds #hours-num {
+    font-size: 56px;
+    font-weight: 700;
+  }
+  footer .footer-box .timer-box #hours #hours-num > h5, footer .footer-box .timer-box #minutes #hours-num > h5, footer .footer-box .timer-box #seconds #hours-num > h5 {
+    font-size: 16px;
+  }
+  footer .footer-box .timer-box #minutes, footer .footer-box .timer-box #seconds {
+    height: 128px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #333950;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 13px;
+  }
+  footer .footer-box .timer-box #minutes #min-num, footer .footer-box .timer-box #seconds #min-num {
+    font-size: 56px;
+    font-weight: 700;
+  }
+  footer .footer-box .timer-box #minutes #min-num > h5, footer .footer-box .timer-box #seconds #min-num > h5 {
+    font-size: 16px;
+  }
+  footer .footer-box .timer-box #seconds {
+    height: 128px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #333950;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 13px;
+  }
+  footer .footer-box .timer-box #seconds #sec-num {
+    font-size: 56px;
+    font-weight: 700;
+  }
+  footer .footer-box .timer-box #seconds #sec-num > h5 {
+    font-size: 16px;
+  }
+  footer .footer-box .footer-button {
+    font-size: 20px;
+    width: 200px;
+  }
 }
 /* 
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
 */
 @media (min-width: 1024px) and (max-width: 1279px) {
-  /* CSS */
+  .background-header {
+    display: none;
+  }
+  .header-logo {
+    display: block;
+    padding-top: 76.65px;
+    margin-bottom: 184px;
+    margin-left: 39px;
+    width: 30px;
+  }
+  .header-illu {
+    display: none;
+  }
+  .sides {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sides .right-side {
+    display: none;
+  }
+  .sides .right-side-main {
+    display: block;
+    margin-right: 20px;
+    top: 20;
+  }
+  .sides .right-side-main > img {
+    position: relative;
+    top: -64px;
+  }
+  .left-side {
+    display: block;
+    margin-bottom: 200px;
+    margin-left: 39px;
+    margin-right: 69px;
+    width: 385px;
+  }
+  .left-side h1 {
+    text-align: start;
+  }
+  .left-side p {
+    text-align: start;
+  }
+  .left-side .left-title1 {
+    display: block;
+  }
+  .left-side .left-title {
+    display: none;
+  }
+  .cards {
+    flex-direction: row;
+  }
+  .cards .card2 {
+    margin-bottom: 195px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .cards .card3 {
+    margin-bottom: 35px;
+  }
+  footer {
+    margin-top: -383px;
+    height: 608px;
+  }
+  footer .footer-box {
+    padding-top: 309px;
+  }
+  footer .footer-box > h4 {
+    font-size: 30px;
+  }
+  footer .footer-box .timer-box #days, footer .footer-box .timer-box #hours, footer .footer-box .timer-box #minutes, footer .footer-box .timer-box #seconds {
+    height: 128px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #333950;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 13px;
+  }
+  footer .footer-box .timer-box #days #days-num, footer .footer-box .timer-box #hours #days-num, footer .footer-box .timer-box #minutes #days-num, footer .footer-box .timer-box #seconds #days-num {
+    font-size: 56px;
+    font-weight: 700;
+  }
+  footer .footer-box .timer-box #days #days-num > h5, footer .footer-box .timer-box #hours #days-num > h5, footer .footer-box .timer-box #minutes #days-num > h5, footer .footer-box .timer-box #seconds #days-num > h5 {
+    font-size: 16px;
+  }
+  footer .footer-box .timer-box #hours, footer .footer-box .timer-box #minutes, footer .footer-box .timer-box #seconds {
+    height: 128px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #333950;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 13px;
+  }
+  footer .footer-box .timer-box #hours #hours-num, footer .footer-box .timer-box #minutes #hours-num, footer .footer-box .timer-box #seconds #hours-num {
+    font-size: 56px;
+    font-weight: 700;
+  }
+  footer .footer-box .timer-box #hours #hours-num > h5, footer .footer-box .timer-box #minutes #hours-num > h5, footer .footer-box .timer-box #seconds #hours-num > h5 {
+    font-size: 16px;
+  }
+  footer .footer-box .timer-box #minutes, footer .footer-box .timer-box #seconds {
+    height: 128px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #333950;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 13px;
+  }
+  footer .footer-box .timer-box #minutes #min-num, footer .footer-box .timer-box #seconds #min-num {
+    font-size: 56px;
+    font-weight: 700;
+  }
+  footer .footer-box .timer-box #minutes #min-num > h5, footer .footer-box .timer-box #seconds #min-num > h5 {
+    font-size: 16px;
+  }
+  footer .footer-box .timer-box #seconds {
+    height: 128px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: #333950;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 13px;
+  }
+  footer .footer-box .timer-box #seconds #sec-num {
+    font-size: 56px;
+    font-weight: 700;
+  }
+  footer .footer-box .timer-box #seconds #sec-num > h5 {
+    font-size: 16px;
+  }
+  footer .footer-box .footer-button {
+    font-size: 20px;
+    width: 200px;
+  }
 }
 /* 
   ##Device = Tablets, Ipads (portrait)
@@ -265,6 +563,7 @@ footer .footer-box .footer-button {
     padding-top: 76.65px;
     margin-bottom: 104px;
     margin-left: 39px;
+    width: 20px;
   }
   .header-illu {
     display: none;
