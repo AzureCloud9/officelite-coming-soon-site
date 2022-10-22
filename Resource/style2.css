@@ -49,6 +49,9 @@ body {
 .title-text #t-text2 {
   display: none;
 }
+.title-text #t-text3 {
+  display: none;
+}
 
 .timer > h4 {
   text-align: center;
@@ -282,6 +285,9 @@ form .container button {
     display: block;
   }
   .title-text #t-text2 {
+    display: none;
+  }
+  .title-text #t-text3 {
     display: block;
   }
   .timer {
